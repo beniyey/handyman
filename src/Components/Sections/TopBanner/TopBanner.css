@@ -1,0 +1,53 @@
+.TopBanner {
+  padding: 0%;
+  height: 100vh;
+  margin: 0%;
+  width: 100%;
+  background-image: url("../../../assets/images/background-image-main-page.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  text-align: center;
+}
+.TopBanner .MainPage-top-banner-header {
+  line-height: 0.9;
+  text-align: center;
+  margin: 30% auto 0%;
+}
+.TopBanner .MainPage-top-banner-header span:nth-child(1) {
+  color: #C430A3;
+  font-size: 100px;
+  margin: 0% auto;
+}
+.TopBanner .MainPage-top-banner-header span:nth-of-type(2) {
+  color: white;
+  font-size: 100px;
+  margin: 0% auto;
+}
+.TopBanner .MainPage-top-banner-content {
+  direction: rtl;
+  color: white;
+  padding: 0% 4%;
+  text-align: center;
+  margin: 0% auto 0%;
+}
+.TopBanner .MainPage-action-button {
+  color: white;
+  background-color: #C430A3;
+  border: none;
+  border-radius: 34px;
+  width: 30%;
+  height: 40px;
+  font-size: 17px;
+  margin: 4% auto;
+  transition: 500ms;
+  cursor: pointer;
+}
+.TopBanner .MainPage-action-button:hover {
+  color: #C430A3;
+  background-color: white;
+  transition: 500ms;
+  box-shadow: white 0px 0px 0px 5px;
+}/*# sourceMappingURL=TopBanner.css.map */

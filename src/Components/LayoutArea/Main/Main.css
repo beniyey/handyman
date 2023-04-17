@@ -1,0 +1,24 @@
+.Main .page {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0% auto;
+  min-height: 100vh;
+  display: grid;
+  border-radius: 40px;
+}
+.Main .page-parent {
+  padding: 40px;
+  border: white 50px solid;
+}
+.Main .ltr-grid {
+  grid-template-columns: 1.5fr 1fr;
+}
+.Main .rtl-grid {
+  grid-template-columns: 1fr 1.5fr;
+}
+.Main .div-parent {
+  position: relative;
+}
+.Main .div-child {
+  position: absolute;
+}/*# sourceMappingURL=main.css.map */

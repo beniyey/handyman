@@ -1,0 +1,63 @@
+.About {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  text-align: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.About .AboutPage-Banner {
+  position: relative;
+}
+.About .AboutPage-Banner div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.About .AboutPage-Banner div span:nth-last-of-type(2) {
+  color: #C430A3;
+  font-size: 100px;
+  margin: 0% auto;
+}
+.About .AboutPage-Banner div span:nth-last-of-type(1) {
+  color: white;
+  font-size: 100px;
+  margin: 0% auto;
+}
+.About .AboutPage-content {
+  direction: rtl;
+  position: relative;
+}
+.About .AboutPage-content div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+  padding: 0%;
+  width: 80%;
+}
+.About .AboutPage-action-button {
+  color: white;
+  background-color: #C430A3;
+  border: none;
+  border-radius: 34px;
+  width: 30%;
+  height: 40px;
+  font-size: 17px;
+  margin: 4% auto;
+  transition: 500ms;
+  cursor: pointer;
+}
+.About .AboutPage-action-button:hover {
+  color: #C430A3;
+  background-color: white;
+  transition: 500ms;
+  box-shadow: white 0px 0px 0px 5px;
+}
+.About .div-child {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=About.css.map */

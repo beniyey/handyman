@@ -1,0 +1,27 @@
+.Main{
+    .page{
+        width: 100%;
+        max-width: 1800px;
+        margin:0% auto ;
+        // height: 800px;
+        min-height: 100vh;
+        display: grid;
+        border-radius: 40px;
+    }
+    .page-parent{
+        padding: 40px;
+        border: white 50px solid;
+    }
+    .ltr-grid{
+        grid-template-columns: 1.5fr 1fr;
+    }
+    .rtl-grid{
+        grid-template-columns: 1fr 1.5fr;
+    }
+    .div-parent{
+        position: relative;
+    }
+    .div-child{
+        position: absolute;
+    }
+}
