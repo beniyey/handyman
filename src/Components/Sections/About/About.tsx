@@ -1,6 +1,9 @@
 import "./About.css";
 
 function About(): JSX.Element {
+    function goToContactPage(){
+        document?.getElementById("contactUs")?.scrollIntoView()
+    }
     return (
         <div className="About page">
             <div className="caption div-parent">
@@ -30,7 +33,7 @@ function About(): JSX.Element {
                         אם אתה צריך הובלה או תיקון, הנדימן אקספרס כאן כדי לשירותכם.
                         צרו קשר עוד היום כדי לתאם את השירות המבוקש במהירות וביעילות.
                     </p>
-                    <button className="AboutPage-action-button">לקבלת הצעת מחיר</button>
+                    <button className="AboutPage-action-button" onClick={goToContactPage}>לקבלת הצעת מחיר</button>
                 </div>
             </div>
         </div>

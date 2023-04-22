@@ -1,6 +1,11 @@
 import "./TopBanner.css";
 
 function TopBanner(): JSX.Element {
+
+    function goToContactPage(){
+        document?.getElementById("contactUs")?.scrollIntoView()
+    }
+
     return (
         <div className="TopBanner">
 			   <div>
@@ -21,7 +26,7 @@ function TopBanner(): JSX.Element {
                         צרו קשר עוד היום כדי לתאם את השירות המבוקש במהירות וביעילות.
                     </p>
                 </div>
-                <button className="MainPage-action-button" onClick={()=>null}>לקבלת הצעת מחיר</button>
+                <button className="MainPage-action-button" onClick={goToContactPage}>לקבלת הצעת מחיר</button>
             </div>
         </div>
     );

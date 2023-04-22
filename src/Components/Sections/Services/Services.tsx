@@ -92,7 +92,7 @@ function Services(): JSX.Element {
                 <div className="Services-Content-cards div-child">
                     {inViewPort && serviceArr.map((el, i) => {
                         return  <div key={i}>
-                            <div style={{"animationDelay": "0."+i+"s"}} className={`service-card animate__animated ${inViewPort?"animate__fadeIn":"hide"}`} >
+                            <div style={{"animationDelay": "0."+i+"s"}} className={`service-card animate__animated ${inViewPort?"animate__fadeIn":"animate__fadeOut"}`} >
                                 <div className="service-card-bg" style={{ backgroundImage: `url(${el.img})` }}>
                                 </div>
                                 <span>{el.title}</span>
@@ -101,7 +101,7 @@ function Services(): JSX.Element {
                     })}
                 </div>
             </div>
-            <div  className={`div-parent animate__animated ${inViewPort?"animate__fadeInUp":"hide"}`}>
+            <div  className={`div-parent animate__animated ${inViewPort?"animate__fadeInUp":"animate__fadeOutUp"}`}>
                 <div className="caption div-child">
                     <span>Our</span>
                     <br />
