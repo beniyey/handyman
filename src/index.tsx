@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Layout from './Components/LayoutArea/Layout/Layout';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+<meta name="viewport" content="minimum-scale=1"></meta>
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

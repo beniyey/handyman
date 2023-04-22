@@ -29,6 +29,10 @@ body {
     font-family: fredoka-semi-bold;
 }
 
+.hide{
+    opacity: 0;
+}
+
 .caption {
     line-height: 0.9;
     span:nth-child(1) {
@@ -44,4 +48,19 @@ body {
     }
 
     text-align: center;
+}
+
+@media only screen and (max-width: 1600px) {
+    header{
+        display: none;
+    }
+    .caption{
+        span:nth-child(1) {
+            font-size: 50px;
+        }
+    
+        span:nth-of-type(2) {
+            font-size: 50px;
+        }   
+    } 
 }

@@ -42,4 +42,25 @@
   background-position: center;
   filter: blur(1px);
   opacity: 0.5;
+}
+@media only screen and (max-width: 1600px) {
+  .Services .Services-Content-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0% auto;
+    justify-content: center;
+  }
+  .Services .div-child {
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .Services {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=Services.css.map */

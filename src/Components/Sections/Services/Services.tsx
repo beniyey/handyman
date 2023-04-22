@@ -26,10 +26,11 @@ function Services(): JSX.Element {
         function isInViewport() {
             let el = element.current
             const rect = el?.getBoundingClientRect();
-            if (!rect) return false
-            return rect ? (
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) 
-            ) : false;
+            if(rect && (rect.bottom - window.innerHeight*0.8) <= (window.innerHeight || document.documentElement.clientHeight)){
+                setInViewPort(true)
+            }else{
+                setInViewPort(false)
+            }
         }
 
         document.addEventListener("scroll", isInViewport)
@@ -85,12 +86,13 @@ function Services(): JSX.Element {
     ]
 
     return (
-        <div ref={element} className="Services page ltr-grid">
+        
+        <div ref={element} className={`Services page animate__animated ltr-grid ${inViewPort?"":""}`}>
             <div className="Services-Content div-parent">
                 <div className="Services-Content-cards div-child">
-                    {serviceArr.map((el, i) => {
-                        return <div key={i}>
-                            <div className={"service-card animate__animated"+inViewPort?"animate__fadeIn":""} >
+                    {inViewPort && serviceArr.map((el, i) => {
+                        return  <div key={i}>
+                            <div style={{"animationDelay": "0."+i+"s"}} className={`service-card animate__animated ${inViewPort?"animate__fadeIn":"hide"}`} >
                                 <div className="service-card-bg" style={{ backgroundImage: `url(${el.img})` }}>
                                 </div>
                                 <span>{el.title}</span>
@@ -99,7 +101,7 @@ function Services(): JSX.Element {
                     })}
                 </div>
             </div>
-            <div className= "div-parent animate__animated animate__fadeInRight">
+            <div  className={`div-parent animate__animated ${inViewPort?"animate__fadeInUp":"hide"}`}>
                 <div className="caption div-child">
                     <span>Our</span>
                     <br />

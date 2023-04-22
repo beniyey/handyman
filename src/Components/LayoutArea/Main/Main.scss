@@ -1,9 +1,9 @@
 .Main{
     .page{
         width: 100%;
+        max-width: 100%;
         max-width: 1800px;
         margin:0% auto ;
-        // height: 800px;
         min-height: 100vh;
         display: grid;
         border-radius: 40px;
@@ -23,5 +23,18 @@
     }
     .div-child{
         position: absolute;
+    }
+
+    @media only screen and (max-width: 1600px) {
+        .page{
+            display: flex;
+            margin: 50px 0%;
+        }
+        .div-child{
+            position: relative;
+        }
+        .caption{
+            margin: 50px auto;
+        }
     }
 }

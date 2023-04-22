@@ -43,7 +43,7 @@
   background-color: #C430A3;
   border: none;
   border-radius: 34px;
-  width: 30%;
+  width: 200px;
   height: 40px;
   font-size: 17px;
   margin: 4% auto;
@@ -60,4 +60,35 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 1600px) {
+  .About {
+    display: flex;
+    flex-direction: column;
+  }
+  .About .AboutPage-Banner div {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
+  .About .AboutPage-content div {
+    position: relative;
+    text-align: center;
+    margin: 0% auto;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
+  .About .div-child {
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .About {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=About.css.map */

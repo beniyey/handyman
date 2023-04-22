@@ -38,7 +38,7 @@
         background-color: #C430A3;
         border: none;
         border-radius: 34px;
-        width: 30%;
+        width: 200px;
         height: 40px;
         font-size: 17px;
         margin: 4% auto;
@@ -52,7 +52,16 @@
         box-shadow: white 0px 0px 0px 5px;
     }
 
-    @media only screen and(max-width: 600px) {
-        
+    @media only screen and(max-width: 1600px) {
+        display: flex;
+        .MainPage-top-banner-header{
+            span:nth-child(1){
+                font-size: 50px;
+            }
+            
+            span:nth-of-type(2){
+                font-size: 50px;
+            }
+        }
     }
 }

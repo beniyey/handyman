@@ -1,3 +1,4 @@
+
 .Services {
     .div-child {
         top: 50%;
@@ -43,11 +44,30 @@
         height: 100%;
         background-size: cover;
         background-position: center;
-        // -webkit-filter: blur(2px);
-        // -moz-filter: blur(2px);
-        // -o-filter: blur(2px);
-        // -ms-filter: blur(2px);
         filter: blur(1px);
         opacity: 0.5;
+    }
+
+    @media only screen and (max-width: 1600px) {
+        .Services-Content-cards{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0% auto;
+            justify-content: center;
+        }
+        .div-child {
+            top: 0;
+            left: 0;
+            transform: none;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 1600px) {
+    .Services{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
